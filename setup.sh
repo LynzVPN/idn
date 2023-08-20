@@ -97,8 +97,8 @@ if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
-mkdir /var/lib/akbarstorevpn;
-echo "IP=" >> /var/lib/akbarstorevpn/ipvps.conf
+mkdir /var/lib/lynzvpn;
+echo "IP=" >> /var/lib/lynzvpn/ipvps.conf
 wget https://${lynzvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
 wget https://${lynzvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
